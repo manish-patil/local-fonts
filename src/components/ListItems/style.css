@@ -1,0 +1,22 @@
+.listItem {
+    display: flex;
+    flex-direction: row;
+    margin-top: .30em;
+    margin-bottom: .30em;
+    margin-left: .25em;
+    margin-right: .25em;
+    cursor: auto;
+}
+
+.listItem:hover {
+    background-color: var(--select-focus);
+    border-radius: 0.25em;
+    color: white;
+}
+
+.listItem-checked:before {
+    padding: 0px;
+    margin-left: 0px;
+    width: 36px;
+    list-style-type: none!important;
+}

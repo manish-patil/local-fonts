@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+:root {
+    --select-border: #777;
+    --select-focus: #5996fa;
+    --select-arrow: var(--select-border);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* https://google-webfonts-helper.herokuapp.com/fonts */
+
+
+/* abril-fatface-regular - latin */
+
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/abril-fatface-v19-latin/abril-fatface-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/abril-fatface-v19-latin/abril-fatface-v19-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* cinzel-regular - latin */
+
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/cinzel-v17-latin/cinzel-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/cinzel-v17-latin/cinzel-v17-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* cinzel-800 - latin */
+
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''), url('./../assets/fonts/cinzel-v17-latin/cinzel-v17-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/cinzel-v17-latin/cinzel-v17-latin-800.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.App-link {
-  color: #61dafb;
+
+/* cormorant-sc-regular - latin */
+
+@font-face {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/cormorant-sc-v16-latin/cormorant-sc-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/cormorant-sc-v16-latin/cormorant-sc-v16-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* cormorant-regular - latin */
+
+@font-face {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/cormorant-v16-latin/cormorant-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/cormorant-v16-latin/cormorant-v16-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Bangers */
+
+
+/* tapestry-regular - latin */
+
+@font-face {
+    font-family: 'Tapestry';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/tapestry-v2-latin/tapestry-v2-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/tapestry-v2-latin/tapestry-v2-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Bebas Neue */
+
+
+/* righteous-regular - latin */
+
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/righteous-v13-latin/righteous-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/righteous-v13-latin/righteous-v13-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* orbitron-regular - latin */
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* orbitron-600 - latin */
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* orbitron-700 - latin */
+
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/orbitron-v24-latin/orbitron-v24-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Playfair Display SC */
+
+
+/* syncopate-regular - latin */
+
+@font-face {
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('./../assets/fonts/syncopate-v19-latin/syncopate-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/syncopate-v19-latin/syncopate-v19-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* syncopate-700 - latin */
+
+@font-face {
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('./../assets/fonts/syncopate-v19-latin/syncopate-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/syncopate-v19-latin/syncopate-v19-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Libre Baskerville */
+
+
+/* Comfortaa */
+
+
+/* montserrat-700 - latin */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('./../assets/fonts/montserrat-v24-latin/montserrat-v24-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('./../assets/fonts/montserrat-v24-latin/montserrat-v24-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
